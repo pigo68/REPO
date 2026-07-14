@@ -1,5 +1,17 @@
 {
     "python.defaultInterpreterPath": "C:\\Users\\pavel\\miniconda3\\envs\\my_env\\python.exe",
     "python.terminal.activateEnvironment": true,
-    "terminal.integrated.defaultProfile.windows": "Command Prompt"
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "terminal.integrated.profiles.windows": {
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": ["/K", "C:\\Users\\pavel\\miniconda3\\condabin\\conda.bat activate my_env"],
+            "icon": "terminal-cmd"
+        },
+    }
+
+
 }
